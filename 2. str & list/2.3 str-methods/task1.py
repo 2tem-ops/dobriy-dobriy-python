@@ -1,0 +1,1 @@
+print((s := input())[0].lower() + s[1].upper() + s[2:].lower())

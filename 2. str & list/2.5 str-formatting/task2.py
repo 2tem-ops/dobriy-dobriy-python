@@ -1,0 +1,1 @@
+print("Габариты: {} x {} x {}".format(*input().split()))

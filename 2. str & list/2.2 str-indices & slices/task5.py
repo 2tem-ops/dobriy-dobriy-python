@@ -1,0 +1,1 @@
+print(s1 := input()[::2], s2 := input()[1::2])
