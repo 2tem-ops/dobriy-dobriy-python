@@ -1,0 +1,1 @@
+print((s1 := "Hello"), (s2 := "Balakirev"))

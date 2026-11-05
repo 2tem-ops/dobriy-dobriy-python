@@ -1,0 +1,1 @@
+res = abs(d:= int(input()))

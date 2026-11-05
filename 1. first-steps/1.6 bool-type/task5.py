@@ -1,0 +1,1 @@
+print((0 <= (num := float(input())) <= 2) or (10 <= num <= 20))

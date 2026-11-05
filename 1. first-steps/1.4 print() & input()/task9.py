@@ -1,0 +1,1 @@
+print(round((width := float(input())) * (height := float(input())) * (depth := float(input())), 2))

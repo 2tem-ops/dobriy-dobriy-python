@@ -1,0 +1,1 @@
+sum_digit = ((digit := int(input())) % 10 + digit // 10 % 10 + digit // 100 % 10 + digit // 1000 % 10)

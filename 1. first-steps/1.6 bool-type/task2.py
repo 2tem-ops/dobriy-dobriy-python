@@ -1,0 +1,1 @@
+print((num := float(input())) - int(num) > 0.5)
