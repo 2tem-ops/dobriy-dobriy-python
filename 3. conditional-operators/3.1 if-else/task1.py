@@ -1,0 +1,1 @@
+print((lst := list(map(float, input().split())))[lst[1] > lst[0]])

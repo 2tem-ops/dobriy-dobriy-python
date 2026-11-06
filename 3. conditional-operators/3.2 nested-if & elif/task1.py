@@ -1,0 +1,1 @@
+print([(num := float(input())) <= 60, 60 < num <= 64, 64 < num <= 69, num > 70].index(True) + 1)

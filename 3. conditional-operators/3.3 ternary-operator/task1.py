@@ -1,0 +1,1 @@
+print(d := (a if (a := float(input())) > (b := float(input())) else b))

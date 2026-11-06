@@ -1,0 +1,1 @@
+print("ДА" if int((num := input())[0]) + int(num[1]) + int(num[2]) == int(num[-1]) + int(num[-2]) + int(num[-3]) else "НЕТ")

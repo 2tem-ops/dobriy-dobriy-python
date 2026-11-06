@@ -1,0 +1,1 @@
+print(*filter(lambda x: x != "Москва", input().split()))

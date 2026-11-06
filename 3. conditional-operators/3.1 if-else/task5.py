@@ -1,0 +1,1 @@
+print("ДА" if int(input()) % 10 == 7 else "НЕТ")

@@ -1,0 +1,1 @@
+print(["НЕТ", "ДА"]["t" in (word := input()) and "h" in word and "o" in word])

@@ -1,0 +1,1 @@
+print(time + 1 if (time := int(input())) < 59 else 0)

@@ -1,0 +1,1 @@
+print("ДА" if (word := input().lower()) == word[::-1] else "НЕТ")
