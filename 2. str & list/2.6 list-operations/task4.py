@@ -1,0 +1,1 @@
+print(round(sum((lst := list(map(int, input().split())))) / len(lst), 1))

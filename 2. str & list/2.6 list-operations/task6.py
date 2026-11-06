@@ -1,0 +1,1 @@
+print(max(lst := list(map(int, input().split()))), min(lst), sum(lst))

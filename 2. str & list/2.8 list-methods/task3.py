@@ -1,0 +1,1 @@
+print("".join(input()[1:].replace("7", "8", 1).split("-")))

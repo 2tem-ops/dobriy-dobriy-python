@@ -1,0 +1,1 @@
+print(*(lst:=list(map(int, input().split()))) + [lst[0] != lst[-1]])

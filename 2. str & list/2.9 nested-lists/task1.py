@@ -1,0 +1,1 @@
+print([5.4, 6.7, 10.4] + [list(map(int, input().split()))])
