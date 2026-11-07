@@ -1,0 +1,1 @@
+print(*[len(city) for city in input().split()])

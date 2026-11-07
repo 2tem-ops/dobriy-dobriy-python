@@ -1,0 +1,1 @@
+print(*[i if i > 0 else -1. for i in map(float, input().split())])

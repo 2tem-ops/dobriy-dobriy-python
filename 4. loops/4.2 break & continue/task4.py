@@ -1,0 +1,1 @@
+print("ДА" if any(map(lambda x: x[0].lower() == x[-1], input().split())) else "НЕТ")
