@@ -1,0 +1,1 @@
+print("НЕ ДОПУЩЕН" if "2" in set(input().split()) else "ДОПУЩЕН")

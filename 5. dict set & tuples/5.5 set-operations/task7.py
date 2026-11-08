@@ -1,0 +1,1 @@
+print("ДА" if int(input()) % 30 == 0 else "НЕТ")

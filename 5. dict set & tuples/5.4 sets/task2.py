@@ -1,0 +1,1 @@
+print(len(set(map(str.strip, __import__("sys").stdin.readlines()))))

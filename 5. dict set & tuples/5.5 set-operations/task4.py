@@ -1,0 +1,1 @@
+print("ДА" if set(input().split()) >= set(input().split()) else "НЕТ")

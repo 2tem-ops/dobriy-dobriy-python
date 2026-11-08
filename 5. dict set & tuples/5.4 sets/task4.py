@@ -1,0 +1,1 @@
+print((lst:=sorted(set(i for i in input() if i.isdigit()))) and " ".join(lst) or "НЕТ")
