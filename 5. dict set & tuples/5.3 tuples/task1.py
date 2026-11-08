@@ -1,0 +1,1 @@
+print((3.4, -56.7) + tuple(map(int, input().split())))

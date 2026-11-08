@@ -1,0 +1,1 @@
+print(*tuple([name.lower() for name in input().split() if "ва" in name.lower()]))
