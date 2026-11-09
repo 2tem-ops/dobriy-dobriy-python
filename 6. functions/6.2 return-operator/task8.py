@@ -1,0 +1,1 @@
+print(*sorted((d := dict(map(lambda x: (x, len(x)), input().split()))), key=d.get))

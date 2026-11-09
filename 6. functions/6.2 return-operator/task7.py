@@ -1,0 +1,1 @@
+print(*filter(lambda x: len(x) >= 6, input().split()))

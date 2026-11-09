@@ -1,0 +1,1 @@
+print((foo := lambda x, y: x * y)(max((lst := list(map(int, input().split())))), min(lst)))

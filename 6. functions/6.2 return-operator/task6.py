@@ -1,0 +1,1 @@
+get_sq = (lambda a, b: a * b) if (tp := input().strip()) == "RECT" else (lambda a: a * a)
