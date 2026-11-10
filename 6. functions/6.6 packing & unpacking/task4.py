@@ -1,0 +1,1 @@
+print(*map(float, input().split()), *input().split())
