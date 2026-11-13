@@ -1,17 +1,32 @@
 from math import sqrt
 
+
 def is_right_rect(a: tuple[int, int], b: tuple[int, int], c: tuple[int, int], d: tuple[int, int], /, *, precision: float = 0.001) -> bool:
-    bd_diagonal_mid = (b[0] + d[0]) / 2, (b[1] + d[1]) / 2
-    ac_diagonal_mid = (a[0] + c[0]) / 2, (a[1] + c[1]) / 2
+    ab = (b[0] - a[0], b[1] - a[1])
+    bc = (c[0] - b[0], c[1] - b[1])
+    cd = (d[0] - c[0], d[1] - c[1])
+    da = (a[0] - d[0], a[1] - d[1])
 
-    bd_diagonal_length = sqrt((d[0] - b[0]) ** 2 + (d[1] - b[1]) ** 2)
-    ac_diagonal_length = sqrt((c[0] - a[0]) ** 2 + (c[1] - a[1]) ** 2)
+    len_ab = sqrt((ab[0] ** 2 + ab[1] ** 2))
+    len_bc = sqrt((bc[0] ** 2 + bc[1] ** 2))
+    len_cd = sqrt((cd[0] ** 2 + cd[1] ** 2))
+    len_da = sqrt((da[0] ** 2 + da[1] ** 2))
 
-    return bd_diagonal_mid == ac_diagonal_mid and bd_diagonal_length == ac_diagonal_length
+    sab = ab[0] * bc[0] + ab[1] * bc[1]
+    sbc = bc[0] * cd[0] + bc[1] * cd[1]
+    scd = cd[0] * da[0] + cd[1] * da[1]
+    sda = da[0] * ab[0] + da[1] * ab[1]
 
-#rect_coords = [(float(x.split('=')[0]), float(x.split('=')[1])) for x in input().split()]
+    cos_b = sab / (len_ab * len_bc)
+    cos_c = sbc / (len_bc * len_cd)
+    cos_d = scd / (len_cd * len_da)
+    cos_a = sda / (len_da * len_ab)
 
-result = is_right_rect((3, 1), (6, 7), (10, 5), (7, -1))
+    return (abs(cos_a) <= precision and
+            abs(cos_b) <= precision and
+            abs(cos_c) <= precision and
+            abs(cos_d) <= precision)
 
-print(result)
 
+rect_coords = [(float(x.split('=')[0]), float(x.split('=')[1])) for x in input().split()]
+result = is_right_rect(*rect_coords)

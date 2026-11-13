@@ -1,0 +1,1 @@
+print((lambda s: "ra" in s)(input()))

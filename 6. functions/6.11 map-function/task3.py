@@ -1,0 +1,1 @@
+print(*map(lambda x: x.translate(str.maketrans("bitBIT", "######")), input().split()))

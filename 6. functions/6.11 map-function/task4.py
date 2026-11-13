@@ -1,0 +1,1 @@
+print(*(result := list(map(lambda x: x % 7 == 0, digits := list(map(int, input().split()))))))

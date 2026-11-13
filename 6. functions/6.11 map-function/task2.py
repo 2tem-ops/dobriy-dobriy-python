@@ -1,0 +1,1 @@
+print(*map(lambda x: abs(int(x)), input().split()))

@@ -1,0 +1,1 @@
+print(*list(map(float, input().split()))[:3])

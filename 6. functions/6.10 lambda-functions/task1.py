@@ -1,0 +1,1 @@
+get_sq = lambda num: num ** 2

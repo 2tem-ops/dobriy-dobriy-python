@@ -1,0 +1,1 @@
+tp = tuple(map(lambda x: tuple(x.split("=")), (s_lst := (s := input()).split())))
