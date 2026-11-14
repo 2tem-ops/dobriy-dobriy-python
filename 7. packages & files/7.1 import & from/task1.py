@@ -1,0 +1,1 @@
+print(__import__("math").ceil(float(input())))
