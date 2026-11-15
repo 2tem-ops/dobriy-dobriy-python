@@ -1,0 +1,1 @@
+print(*sorted(input().split(), key=lambda x: ['до', 'ре', 'ми', 'фа', 'соль', 'ля', 'си'].index(x)))

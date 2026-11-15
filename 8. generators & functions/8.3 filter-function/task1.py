@@ -1,0 +1,1 @@
+print(next((gen := filter(lambda s: len(s) > 5, input().split()))), next(gen), next(gen))

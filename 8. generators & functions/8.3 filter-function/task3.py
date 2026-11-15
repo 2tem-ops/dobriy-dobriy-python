@@ -1,0 +1,1 @@
+print(*filter(lambda x: len([i for i in str(x) if i.isdigit()]) == 2, map(int, input().split())))

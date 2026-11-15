@@ -1,0 +1,1 @@
+print(*sorted(filter(lambda x: x % 2 == 0, set(map(int, input().split())) & set(map(int, input().split())))))
